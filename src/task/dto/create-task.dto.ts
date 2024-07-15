@@ -6,11 +6,11 @@ export class CreateTaskDto {
     @IsNumber({}, {message: "Должно быть числом"})    
     taskorder:number;
    
-    @ApiProperty({example: "new", description: "name of Task"})
+    @ApiProperty({example: "new task", description: "name of Task"})
     @IsString({message: 'Должно быть строкой'})
     taskname: string;
     
-    @ApiProperty({example: "new", description: "Description of Task"})
+    @ApiProperty({example: "This task is about something", description: "Description of Task"})
     @IsString({message: 'Должно быть строкой'})
     description: string;    
 }

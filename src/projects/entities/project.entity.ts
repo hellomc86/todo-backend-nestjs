@@ -9,7 +9,7 @@ export class Project {
     @PrimaryGeneratedColumn()
     id: number;
     
-    @ApiProperty({example: "frist Project", description: "Name of Project"})
+    @ApiProperty({example: "first Project", description: "Name of Project"})
     @Column({ unique:true, nullable:false})
     projectname: string;
     
