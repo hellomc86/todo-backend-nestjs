@@ -175,6 +175,5 @@ export class TasklistService {
         tasklistorder: Between(orderNumberMin, orderNumberMax)
       }
     });
-  }
-
+  } 
 }

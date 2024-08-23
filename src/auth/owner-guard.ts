@@ -30,9 +30,8 @@ export class OwnerGuard implements CanActivate {
             if(projects.length < 1) throw new UnauthorizedException({message: 'Project not found or You do not have access to it'});
 
             return user.id === projects[0].user.id;
-            //return true;
-        } catch (e) {
-            //throw new UnauthorizedException({message: 'Пользователь не авторизован'})
+         
+        } catch (e) {         
             throw new UnauthorizedException(e.message)
         }
     }
